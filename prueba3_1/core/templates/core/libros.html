@@ -33,6 +33,7 @@
                     <td>{{li.descripcion}}</td>
                     <td>{{li.categoria}}</td>
                     <td><a href="{% url 'mod_libros' li.isbn %}">Modificar</a></td>
+                    <td><a href="{% url 'mod_libros' li.isbn %}">Eliminar</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
