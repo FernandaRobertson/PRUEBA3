@@ -1,5 +1,4 @@
 <!doctype html>
-{%load static%}
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -8,12 +7,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="estilos" href= "{% static 'core/css/estilos.css'%}"
 
     
   </head>
   <body>
     <h1>Biblioteca From</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">Biblioteca home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="libros.html">Libros </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro_us.html">Registro Usuario</a>
+            </li>
+           <li>
+            <div id="MyClockDisplay" class="nav-link clock" onload="showTime()"></div>
+          </li>
+          </ul>
+        </div>
+      </nav>
     <p>Nuestro proposito como biblioteca es poder brindarles todos los libros para lograr mayor educacion, o entretencion. </p>
 
   <div class="container">
@@ -29,21 +46,21 @@
                     <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/2b/24/2b24851d640c374d4290f8d320ef5e8c.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>El simbolo perdido</h5>
-                        <p>Escrito por Dan Brown</p>
+                        <p>El experto en simbología Robert Langdon es convocado inesperadamente por Peter Solomon, masón, filántropo y su antiguo mentor, para dar una conferencia en el Capitolio.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://www.planetadelibros.cl/usuaris/libros/fotos/128/m_libros/127730_portada_el-codigo-da-vinci_dan-brown_201505260959.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>El codigo da vinci</h5>
-                        <p>Escrito por Dan Brown</p>
+                        <p>Un asesinato en el Museo del Louvre y pistas en las pinturas de Leonardo da Vinci conducen al descubrimiento de un misterio religioso que podría estremecer las bases del cristianismo.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://imagessl5.casadellibro.com/a/l/t5/25/9788495618825.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>La conspiracion</h5>
-                        <p>Escrito por Dan Brown</p>
+                        <p>Un nuevo satélite de la NASA demuestra la existencia de un extraño objeto enterrado en el hielo del Ártico. Para la agencia espacial norteamericana se trata de una victoria muy necesaria para la política espacial de los EE. UU.</p>
                     </div>
                 </div>
             </div>

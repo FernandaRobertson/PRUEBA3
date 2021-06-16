@@ -20,3 +20,4 @@ class Libro(models.Model):
 
     def __int__(self):
         return self.isbn
+

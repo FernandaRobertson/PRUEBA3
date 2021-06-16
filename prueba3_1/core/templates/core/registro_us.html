@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="Inicia Sesion text-center">Inicia Sesion</h1>
+    <div class="container">
+        <div class="row">
+        
+            <form action="" class="col-lg-6 offset-lg-3" id="forma1">
+                <div class="form-group"> 
+                    <br>
+                    <label for="nombre">Nombre:</label> 
+                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre" required>
+                    
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email:</label> 
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su email" required>
+                    
+                </div>
+                <div class="form-group"> 
+                    <label for="contraseña1">Contraseña:</label> 
+                    <input type="password" name="contra1" id="contra1" class="form-control" placeholder="Ingrese su contraseña">
+                   
+                </div>
+
+                <div class="form-group"> 
+                    <label for="contraseña2">Contraseña nuevamente:</label> 
+                    <input type="password" name="contra2" id="contra2" class="form-control" placeholder="Repita su contraseña">    
+                <br>
+
+                <div>
+                    <label for="comentarios">Comentarios:</label> <br>
+                    <textarea name="comentarios" id="com" class="form-control" cols="30" rows="10"></textarea>
+                  <br>
+                </div>
+            
+
+        <input type="submit" class="btn btn-danger" value="Enviar" id="enviar">
+    
+        <input type="reset" class="btn btn-primary" value="Limpiar" id="limpiar">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <script>
+        $("#enviar").click(function(){
+            if((document.getElementById("contra1").value) != (document.getElementById("contra2").value)){
+                alert("Las contraseñas no coiciden");
+        
+            }
+        });
+    </script>
+
+</body>
+</html>

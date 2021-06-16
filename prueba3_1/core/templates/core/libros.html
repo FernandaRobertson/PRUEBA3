@@ -8,6 +8,7 @@
     <title>Listado Libros</title>
 </head>
 <body>
+    
     <div class="container">
         <div class="row">
             <h1>Lista de Libros</h1>
@@ -32,8 +33,8 @@
                     <td>{{li.autor}}</td>
                     <td>{{li.descripcion}}</td>
                     <td>{{li.categoria}}</td>
-                    <td><a href="{% url 'mod_libros' li.isbn %}">Modificar</a></td>
-                    <td><a href="{% url 'mod_libros' li.isbn %}">Eliminar</a></td>
+                    <td><a href="{% url 'form_libros' li.isbn %}">Modificar</a></td>
+                    <td><a href="{% url 'form_libros' li.isbn %}">Eliminar</a></td>
                 </tr>
                 {% endfor %}
             </tbody>
